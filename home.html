@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>sign up page</title>
+        <link rel="stylesheet" href="home.css">
+        <script src="https://kit.fontawesome.com/bbce9a2f30.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div class="CONTAINER">
+        <div class="form-box">
+            <h1>REGISTER YOUR DETAILS👇</h1>
+            <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <input type="second name" placeholder="Second Name">
+            </div>
+            <div class="input-box">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password">
+                <span class="eye" onclick="myFunction()">
+                <i id="hide1" class="fa fa-eye"></i>
+                <i id="hide2" class="fa fa-eye-slash"></i>
+            </span>
+            </div>
+            <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Re-password">
+                <span class="eye" onclick="myFunction()">
+                <i id="hide1" class="fa fa-eye"></i>
+                <i id="hide2" class="fa fa-eye-slash"></i>
+            </span>
+            </div>
+            <button type="button" class="login-btn">SIGN UP</button>
+            <div class="icon">
+                <a href="#"> <ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"> <ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"> <ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"> <ion-icon name="logo-Google"></ion-icon></a>
+
+            </div>
+
+             <p>By creating an account you agree to our <a href="#">Term and privacy</a></p>
+
+             <p>Have already an account? <a href="">Sign in</a></p>
+    </div>
+    </div>
+    <SCript>
+        function myFunction(){
+            var x =document.getElementById("myinput");
+            var y =document.getElementById("hide1"); 
+            var z =document.getElementById("hide2");
+
+            if(x.type === 'password'){
+                x.type = "text";
+                y.style.display = "block";
+                z.style.display = "none";
+            }
+            else{
+                x.type = "password";
+                y.style.display = "none";
+                z.style.display = "block";
+            }
+        }
+    </SCript>
+
+    </body>
+</html>
